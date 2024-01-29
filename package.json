@@ -20,5 +20,13 @@
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerg959/frontend-project-44.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zerg959/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/zerg959/frontend-project-44#readme"
 }
