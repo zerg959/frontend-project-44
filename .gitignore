@@ -4,6 +4,10 @@
 /dist
 /tmp
 /out-tsc
+<<<<<<< HEAD
+=======
+/node_modules
+>>>>>>> c9c48d5 (dialogues)
 
 # Runtime data
 pids
