@@ -5,5 +5,8 @@ const greets = () => {
   myHeroName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${myHeroName}!`);
 };
+const congrats = (heroName) => {
+  console.log(`Congratulations, ${heroName}`)
+} 
 
-export { greets, myHeroName };
+export { greets, congrats, myHeroName };
