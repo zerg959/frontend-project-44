@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-import { myHeroName } from "../dialogues/heros-name.js";
+import { myHeroName } from "./heros-name.js";
 
 const startMessage = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
 let attempts = 3;

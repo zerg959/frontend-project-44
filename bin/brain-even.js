@@ -1,5 +1,5 @@
 import { greets, congrats, myHeroName } from "../dialogues/heros-name.js";
-import { checkAnswer, attempts, answer1, answer2, startMessage} from "../dialogues/task-description.js";
+import { checkAnswer, attempts, answer1, answer2, startMessage} from "../dialogues/brain-even-task-description.js";
 
 greets();
 startMessage()
