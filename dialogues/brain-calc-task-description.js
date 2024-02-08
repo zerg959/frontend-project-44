@@ -6,11 +6,16 @@ const max = 10;
 const min = 1;
 
 const questFunc = (max, min) => {
-  return Math.floor(Math.random() * (max - min) )+ min
+  const operators = ['+',  '*'];
+  let firstElem = Math.floor(Math.random() * (max - min)) + min;
+  let secondElem = Math.floor(Math.random() * (max - min)) + min;
+  let operIdx = Math.floor(Math.random() * (2 - 0)) + 0;
+  return `${firstElem} ${operators[operIdx]} ${secondElem}`
 };
 
 const conditionFunc = (dataIn) => {
-  return dataIn % 2 === 0
+  let calcData = dataIn.split(' ')
+  return calcData;
 };
 
 const checkAnswer = (attempts, answer1, answ2) => {
