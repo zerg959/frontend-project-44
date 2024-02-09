@@ -1,4 +1,5 @@
 import readlineSync from "readline-sync";
+let myHeroName = '';
 
 const startMessage = (message) => console.log(message);
 
@@ -7,13 +8,22 @@ const questFunc = (max, min) => {
   let firstElem = Math.floor(Math.random() * (max - min)) + min;
   let secondElem = Math.floor(Math.random() * (max - min)) + min;
   let operIdx = Math.floor(Math.random() * (2 - 0)) + 0;
-  return `${firstElem} ${operators[operIdx]} ${secondElem}`
+  return `${firstElem} ${operators[operIdx]} ${secondElem}`;
 };
-const data = questFunc(11, 1);
 
 const conditionFunc = (dataIn) => {
-  let calcData = dataIn.split(' ')
+  let calcData = dataIn.split(' ');
   return calcData;
 };
 
-console.log(conditionFunc(data));
+const greets = () => {
+  console.log('Welcome to the Brain Games!');
+  myHeroName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${myHeroName}!`);
+};
+
+const congrats = (heroName) => {
+  console.log(`Congratulations, ${heroName}`)
+}; 
+
+export { startMessage, greets, congrats, myHeroName };

@@ -1,16 +1,15 @@
 import readlineSync from "readline-sync";
-import { myHeroName } from "./heros-name.js";
+import { myHeroName } from "./functions.js";
 
-const startMessage = (message) => console.log(message);
 const max = 10;
 const min = 1;
 
 const questFunc = (max, min) => {
-  return Math.floor(Math.random() * (max - min) )+ min
+  return Math.floor(Math.random() * (max - min) )+ min;
 };
 
 const conditionFunc = (dataIn) => {
-  return dataIn % 2 === 0
+  return dataIn % 2 === 0;
 };
 
 const checkAnswer = (attempts, answer1, answ2) => {
@@ -25,18 +24,18 @@ const checkAnswer = (attempts, answer1, answ2) => {
       correctAnsw = answer1;
       wrongAnsw = answ2;
       if (yourAnswer === correctAnsw) {
-        console.log('Correct!')
+        console.log('Correct!');
       counter += 1;
       } else {
       wrongAnsw = answ2;
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnsw}'`)
-      console.log(`Lets's try again, ${myHeroName}`)
+      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnsw}'`);
+      console.log(`Lets's try again, ${myHeroName}`);
     counter = 0;}
     } else {
       correctAnsw = answ2;
       wrongAnsw = answer1;
       if (yourAnswer === correctAnsw) {
-        console.log('Correct!')
+        console.log('Correct!');
       counter += 1;
       }
       else {
@@ -45,7 +44,6 @@ const checkAnswer = (attempts, answer1, answ2) => {
         console.log(`Lets's try again, ${myHeroName}`);
       counter = 0;}
       }
-    }
-  
+  } 
 }
-export { conditionFunc, checkAnswer, startMessage, questFunc };
+export { conditionFunc, checkAnswer,questFunc };

@@ -1,5 +1,5 @@
-import { greets, congrats, myHeroName } from "../dialogues/heros-name.js";
-import { checkAnswer, startMessage } from "../dialogues/brain-even-task-description.js";
+import { checkAnswer } from "../dialogues/brain-even-task-description.js";
+import { startMessage, greets, congrats, myHeroName } from "../dialogues/functions.js";
 const attempts = 3;
 const answer1 = 'yes';
 const answer2 = 'no';
