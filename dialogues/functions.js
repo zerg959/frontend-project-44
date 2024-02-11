@@ -1,10 +1,15 @@
 import readlineSync from "readline-sync";
+
 let myHeroName = '';
 const randomInt = (max, min) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-const startMessage = (message) => console.log(message);
+const startMessage = (message) => message;
+const answerInput = () => {
+  let heroAnswer = readlineSync.question('Your answer: ');
+  return heroAnswer;
+  };
 
 // const questFunc = (max, min) => {
 //   const operators = ['+',  '*'];
@@ -29,4 +34,4 @@ const congrats = (heroName) => {
   console.log(`Congratulations, ${heroName}`)
 }; 
 export { randomInt }
-export { startMessage, greets, congrats, myHeroName };
+export { startMessage, greets, congrats, answerInput, myHeroName };

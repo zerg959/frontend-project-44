@@ -1,11 +1,4 @@
-#!/usr/bin/env node
-
-// import { brainCalc } from "./brain-calc.js";
-// import { brainEven } from "./brain-even.js";
-// brainEven();
-// brainCalc();
-
-import { evenTask, evenGame } from "../z/even.js";
+import { evenTask, evenGame } from "./even.js";
 import { startMessage, randomInt, myHeroName, greets, answerInput } from "../dialogues/functions.js";
 
 const attempts = 3;
@@ -25,13 +18,12 @@ const gameGenerator = () => {
       console.log('Correct!')
       counter += 1;
     } else {
-      corrAnswr = estimatedAnsw;
-      wrongAnswr = answr;  
-      console.log(`"${wrongAnswr}" is wrong answer ;(. Correct answer was "${corrAnswr}".`);
-      counter = 0;
-    }
+    corrAnswr = estimatedAnsw;
+    wrongAnswr = answr;  
+    console.log(`"${wrongAnswr}" is wrong answer ;(. Correct answer was "${corrAnswr}".`);
+    counter = 0;}
   }
-  console.log(`Congrtulations, ${myHeroName}!`);
-};
+  console.log(`Congrtulations, ${myHeroName}!`)
+}
 
-// gameGenerator();
+gameGenerator();
