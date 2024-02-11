@@ -15,8 +15,8 @@ const gameGenerator = (game, task) => {
   task;
   console.log(task);
   while (counter != attempts) {
-    const [evnTask, estimatedAnsw] = game();
-    console.log(`Question: ${evnTask}`);
+    const [inputTask, estimatedAnsw] = game();
+    console.log(`Question: ${inputTask}`);
     let answr = answerInput();
     if (answr === estimatedAnsw) {
       console.log('Correct!')

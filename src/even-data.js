@@ -18,7 +18,3 @@ const evenGame = () => {
 }
 
 export { evenTask, evenCheck, evenGame}
-// let n = randomInt(1,101);
-// let questIsEven = randomInt(1,101);
-// let answerIsEven = even(questIsEven);
-// console.log(evenGame());
