@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { startMessage, greets, congrats, myHeroName} from "../dialogues/functions.js";
 import { checkAnswer} from "../dialogues/brain-calc-task-description.js";
 const attempts = 3;

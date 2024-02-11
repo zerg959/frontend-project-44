@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { checkAnswer } from "../dialogues/brain-even-task-description.js";
 import { startMessage, greets, congrats, myHeroName } from "../dialogues/functions.js";
 const attempts = 3;
