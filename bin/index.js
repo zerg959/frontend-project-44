@@ -1,17 +1,9 @@
 #!/usr/bin/env node
-
 import { 
-  evenTask, 
-  evenGame 
-} from "../z/even.js";
-
-import { 
-  startMessage, 
-  randomInt, 
   myHeroName, 
   greets, 
   answerInput 
-} from "../dialogues/functions.js";
+} from "../src/functions.js";
 
 const attempts = 3;
 let counter = 0;
@@ -21,7 +13,7 @@ const gameGenerator = (game, task) => {
   let wrongAnswr;
   greets();
   task;
-  console.log(evenTask);
+  console.log(task);
   while (counter != attempts) {
     const [evnTask, estimatedAnsw] = game();
     console.log(`Question: ${evnTask}`);
@@ -38,5 +30,5 @@ const gameGenerator = (game, task) => {
   }
   console.log(`Congrtulations, ${myHeroName}!`);
 };
-
-gameGenerator(evenGame, evenTask);
+export { gameGenerator };
+// gameGenerator(evenGame, evenTask);

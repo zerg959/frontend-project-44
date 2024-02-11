@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-import { evenTask, evenGame } from "../z/even.js"
-import { startMessage, randomInt, myHeroName, greets, answerInput } from "../dialogues/functions.js";
+import { evenTask, evenGame } from "../src/even-data.js"
+import { gameGenerator } from "./index.js";
 
-
-const attempts = 3;
-let counter = 0;
+gameGenerator(evenGame, evenTask);

@@ -1,4 +1,4 @@
-import { randomInt } from "../dialogues/functions.js";
+import { randomInt } from "./functions.js";
 
 const evenTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 

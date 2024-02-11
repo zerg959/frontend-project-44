@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-import { myHeroName } from "./functions.js";
+import { myHeroName } from "../src/functions.js";
 
 // const startMessage = (message) => console.log(message);
 const max = 10;

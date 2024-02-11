@@ -1,5 +1,5 @@
-import { evenTask, evenGame } from "./even.js";
-import { startMessage, randomInt, myHeroName, greets, answerInput } from "../dialogues/functions.js";
+import { evenTask, evenGame } from "./even-data.js";
+import { startMessage, randomInt, myHeroName, greets, answerInput } from "../src/games/functions.js";
 
 const attempts = 3;
 let counter = 0;
