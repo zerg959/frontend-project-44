@@ -1,24 +1,29 @@
 #!/usr/bin/env node
 
-// import { brainCalc } from "./brain-calc.js";
-// import { brainEven } from "./brain-even.js";
-// brainEven();
-// brainCalc();
+import { 
+  evenTask, 
+  evenGame 
+} from "../z/even.js";
 
-import { evenTask, evenGame } from "../z/even.js";
-import { startMessage, randomInt, myHeroName, greets, answerInput } from "../dialogues/functions.js";
+import { 
+  startMessage, 
+  randomInt, 
+  myHeroName, 
+  greets, 
+  answerInput 
+} from "../dialogues/functions.js";
 
 const attempts = 3;
 let counter = 0;
 
-const gameGenerator = () => {
+const gameGenerator = (game, task) => {
   let corrAnswr;
   let wrongAnswr;
   greets();
-  startMessage();
+  task;
   console.log(evenTask);
   while (counter != attempts) {
-    const [evnTask, estimatedAnsw] = evenGame();
+    const [evnTask, estimatedAnsw] = game();
     console.log(`Question: ${evnTask}`);
     let answr = answerInput();
     if (answr === estimatedAnsw) {
@@ -34,4 +39,4 @@ const gameGenerator = () => {
   console.log(`Congrtulations, ${myHeroName}!`);
 };
 
-// gameGenerator();
+gameGenerator(evenGame, evenTask);
