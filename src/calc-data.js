@@ -11,4 +11,4 @@ const calcGame = () => {
   return [questExpression, String(eval(questExpression))];
 };
 
-export { calcTask, calcGame}
+export { calcTask, calcGame };

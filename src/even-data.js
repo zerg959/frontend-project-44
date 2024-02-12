@@ -17,4 +17,4 @@ const evenGame = () => {
   return [questIsEven, answerIsEven];
 }
 
-export { evenTask, evenCheck, evenGame}
+export { evenTask, evenCheck, evenGame};
