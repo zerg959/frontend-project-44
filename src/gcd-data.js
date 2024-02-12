@@ -27,7 +27,7 @@ const gcdGame = () => {
     }
   }
   let gcd = Math.max(...gcdArr);
-  return [`${num1} ${num2}`, `${gcd}`];
+  return [`${num1} ${num2}`, String(gcd)];
 };
 
 export { gcdGame, gcdTask };
