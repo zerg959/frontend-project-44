@@ -22,7 +22,7 @@ import range from "lodash.range";
         console.log('Correct!')
         i = Number(i) + 1;
         if (i === attempts) {
-          console.log(`Congrtulations, ${myHeroName}!`);
+          console.log(`Congratulations, ${myHeroName}!`);
       } 
     }
       if (answr !== estimatedAnsw) {

@@ -17,8 +17,4 @@ const greets = () => {
   console.log(`Hello, ${myHeroName}!`);
 };
 
-const congrats = (heroName) => {
-  console.log(`Congratulations, ${heroName}!`);
-}; 
-
-export { randomInt, startMessage, greets, congrats, answerInput, myHeroName };
+export { randomInt, startMessage, greets, answerInput, myHeroName };
