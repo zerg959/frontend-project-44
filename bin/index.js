@@ -4,9 +4,10 @@ import {
   greets, 
   answerInput 
 } from "../src/functions.js";
+import range from "lodash.range";
 
 const attempts = 3;
-let counter = 0;
+// let counter = 0;
 
 const gameGenerator = (game, task) => {
   let corrAnswr;
@@ -14,22 +15,26 @@ const gameGenerator = (game, task) => {
   greets();
   task;
   console.log(task);
-  while (counter != attempts) {
+  for (let i in range(attempts)) {
     const [inputTask, estimatedAnsw] = game();
     console.log(`Question: ${inputTask}`);
     let answr = answerInput();
     if (answr === estimatedAnsw) {
       console.log('Correct!')
-      counter += 1;
-    } else {
+      i = Number(i) + 1;
+      if (i === 3) {
+        console.log(`Congrtulations, ${myHeroName}!`);
+    } 
+  }
+    if (answr !== estimatedAnsw) {
       corrAnswr = estimatedAnsw;
       wrongAnswr = answr;  
       console.log(`"${wrongAnswr}" is wrong answer ;(. Correct answer was "${corrAnswr}".`);
       console.log(`Let's try again, ${myHeroName}!`);
-      counter = 0;
+      break
     }
+
   }
-  console.log(`Congratulations, ${myHeroName}!`);
 };
 
 export { gameGenerator };
