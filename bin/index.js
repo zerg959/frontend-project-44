@@ -22,8 +22,8 @@ const gameGenerator = (game, task) => {
     if (answr === estimatedAnsw) {
       console.log('Correct!')
       i = Number(i) + 1;
-      if (i === 3) {
-        console.log(`Congrtulations, ${myHeroName}!`);
+      if (i === attempts) {
+        console.log(`Congratulations, ${myHeroName}!`);
     } 
   }
     if (answr !== estimatedAnsw) {
