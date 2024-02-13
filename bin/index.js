@@ -28,7 +28,7 @@ const gameGenerator = (game, task) => {
       counter = 0;
     }
   }
-  console.log(`Congrtulations, ${myHeroName}!`);
+  console.log(`Congratulations, ${myHeroName}!`);
 };
 
 export { gameGenerator };
