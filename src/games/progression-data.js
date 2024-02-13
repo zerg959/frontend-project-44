@@ -1,7 +1,7 @@
 import range from 'lodash/range.js';
 import { randomInt } from '../functions.js';
 
-const progressionTask = 'What number is missing in the progression?';
+const progressionTask = () =>  'What number is missing in the progression?';
 
 const progressionGame = () => {
   const progressionStep = randomInt(1, 15);

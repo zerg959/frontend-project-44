@@ -1,6 +1,6 @@
 import { randomInt } from '../functions.js';
 
-const calcTask = 'What is the result of the expression?';
+const calcTask = () => 'What is the result of the expression?';
 
 const calcGame = () => {
   const num1 = randomInt(1, 11);

@@ -3,7 +3,7 @@ import { randomInt } from '../functions.js';
 const maxNum = 50;
 const minNum = 1;
 
-const gcdTask = 'Find the greatest common divisor of given numbers.';
+const gcdTask = () => 'Find the greatest common divisor of given numbers.';
 
 const gcdGame = () => {
   const num1 = randomInt(maxNum, minNum);
