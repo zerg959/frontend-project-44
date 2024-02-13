@@ -21,7 +21,7 @@ import range from "lodash.range";
       if (answr === estimatedAnsw) {
         console.log('Correct!')
         i = Number(i) + 1;
-        if (i === a) {
+        if (i === attempts) {
           console.log(`Congrtulations, ${myHeroName}!`);
       } 
     }
@@ -35,3 +35,5 @@ import range from "lodash.range";
   
     }
   };
+
+export { gameGenerator }
