@@ -30,5 +30,5 @@ const gameGenerator = (game, task) => {
   }
   console.log(`Congrtulations, ${myHeroName}!`);
 };
+
 export { gameGenerator };
-// gameGenerator(evenGame, evenTask);

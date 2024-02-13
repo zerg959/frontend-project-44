@@ -1,4 +1,4 @@
-import { randomInt } from "./functions.js";
+import { randomInt } from "../functions.js";
 
 const maxnum = 50;
 const minnum = 1;

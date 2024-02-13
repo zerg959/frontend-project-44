@@ -1,4 +1,4 @@
-import { randomInt } from "./functions.js";
+import { randomInt } from "../functions.js";
 
 const calcTask = 'What is the result of the expression?';
 
