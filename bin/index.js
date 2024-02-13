@@ -3,8 +3,8 @@ import {
   myHeroName, 
   greets, 
   answerInput 
-  import range from "lodash.range";
-
+} from "../src/functions.js";
+import range from "lodash.range";
   const attempts = 3;
   // let counter = 0;
   
@@ -21,7 +21,7 @@ import {
       if (answr === estimatedAnsw) {
         console.log('Correct!')
         i = Number(i) + 1;
-        if (i === 3) {
+        if (i === a) {
           console.log(`Congrtulations, ${myHeroName}!`);
       } 
     }
