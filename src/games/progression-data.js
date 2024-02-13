@@ -10,7 +10,7 @@ const progressionGame = () => {
   let progressionStart = randomInt(1, 50)
   let progression = range(progressionStart,1001,progressionStep);
   let newProgr = progression.slice(0,progressionLen);
-  let estimatedAnsw = newProgr.splice(randomInt(1,progressionLen-1),1,'...');
+  let estimatedAnsw = newProgr.splice(randomInt(1,progressionLen-1),1,'..');
   let x = newProgr.join(' ');
   return [x, String(estimatedAnsw)];
 }
