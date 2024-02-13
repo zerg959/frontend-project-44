@@ -3,8 +3,7 @@ import {
   myHeroName, 
   greets, 
   answerInput 
-} from "../src/functions.js";
-// import range from "lodash.range";
+} from '../src/functions.js';
 
 const attempts = 3;
 
@@ -12,8 +11,8 @@ const gameGenerator = (game, task) => {
   let corrAnswr;
   let wrongAnswr;
   greets();
-  task;
-  console.log(task);
+  task();
+  console.log(task());
   // for (let i in range(attempts)) {
   for (let i = 0; i < attempts; i++) {
     const [inputTask, estimatedAnsw] = game();
