@@ -1,13 +1,11 @@
-import { randomInt } from "../functions.js";
+import { randomInt } from ''../functions.js';
 
 const evenTask = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const evenCheck = (num) => {
-  return num % 2 === 0;
-};
+const evenCheck = (num) => num % 2 === 0;
 
 const evenGame = () => {
-  let questIsEven = randomInt(1,101);
+  const questIsEven = randomInt(1, 101);
   let answerIsEven;
   if (evenCheck(questIsEven)) {
     answerIsEven = 'yes';
@@ -15,6 +13,6 @@ const evenGame = () => {
     answerIsEven = 'no';
   }
   return [questIsEven, answerIsEven];
-}
+};
 
-export { evenTask, evenCheck, evenGame};
+export { evenTask, evenCheck, evenGame };
