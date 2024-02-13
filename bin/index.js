@@ -25,8 +25,8 @@ const gameGenerator = (game, task) => {
       corrAnswr = estimatedAnsw;
       wrongAnswr = answr;  
       console.log(`"${wrongAnswr}" is wrong answer ;(. Correct answer was "${corrAnswr}".`);
-      counter = 0;
       console.log(`Let's try again, ${myHeroName}!`);
+      counter = 0;
     }
   }
   console.log(`Congratulations, ${myHeroName}!`);
