@@ -1,7 +1,6 @@
 import { randomInt } from "../functions.js";
 
-// const calcTask = 'What is the result of the expression?';
-const calcTask = 'Answer "yes" if the number is even, otherwise answer "no".'
+const calcTask = 'What is the result of the expression?';
 
 const calcGame = () => {
   let num1 = randomInt(1,11);
