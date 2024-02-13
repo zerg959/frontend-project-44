@@ -7,7 +7,6 @@ import {
 import range from "lodash.range";
 
 const attempts = 3;
-// let counter = 0;
 
 const gameGenerator = (game, task) => {
   let corrAnswr;
@@ -33,7 +32,6 @@ const gameGenerator = (game, task) => {
       console.log(`Let's try again, ${myHeroName}!`);
       break
     }
-
   }
 };
 
