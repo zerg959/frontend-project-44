@@ -3,36 +3,32 @@ import {
   myHeroName, 
   greets, 
   answerInput 
-} from '../src/functions.js';
+} from "../src/functions.js";
 
 const attempts = 3;
+let counter = 0;
 
 const gameGenerator = (game, task) => {
   let corrAnswr;
   let wrongAnswr;
   greets();
-  task();
-  console.log(task());
-  // for (let i in range(attempts)) {
-  for (let i = 0; i === attempts; i++) {
+  task;
+  console.log(task);
+  while (counter != attempts) {
     const [inputTask, estimatedAnsw] = game();
     console.log(`Question: ${inputTask}`);
-    const answr = answerInput();
+    let answr = answerInput();
     if (answr === estimatedAnsw) {
-      console.log('Correct!');
-      i = Number(i) + 1;
-      if (i === attempts) {
-        console.log(`Congratulations, ${myHeroName}!`);
-      }
-    }
-    if (answr !== estimatedAnsw) {
+      console.log('Correct!')
+      counter += 1;
+    } else {
       corrAnswr = estimatedAnsw;
-      wrongAnswr = answr;
+      wrongAnswr = answr;  
       console.log(`"${wrongAnswr}" is wrong answer ;(. Correct answer was "${corrAnswr}".`);
-      console.log(`Let's try again, ${myHeroName}!`);
-      break;
+      counter = 0;
     }
   }
+  console.log(`Congratulations, ${myHeroName}!`);
 };
 
 export { gameGenerator };
