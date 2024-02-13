@@ -21,7 +21,7 @@ import range from "lodash.range";
       if (answr === estimatedAnsw) {
         console.log('Correct!')
         i = Number(i) + 1;
-        if (i === attempts) {
+        if (i === 3) {
           console.log(`Congratulations, ${myHeroName}!`);
       } 
     }
