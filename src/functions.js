@@ -1,9 +1,7 @@
 import readlineSync from "readline-sync";
 
 let myHeroName = '';
-const randomInt = (max, min) => {
-  return Math.floor(Math.random() * (max - min)) + min;
-};
+const randomInt = (max, min) =>  Math.floor(Math.random() * (max - min)) + min;
 
 const startMessage = (message) => message;
 const answerInput = () => {

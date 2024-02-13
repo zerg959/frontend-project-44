@@ -1,4 +1,4 @@
-import { randomInt } from "../functions.js";
+import { randomInt } from '../functions.js';
 
 const maxnum = 50;
 const minnum = 1;
@@ -19,8 +19,8 @@ const gcdGame = () => {
   for (let k = 1; k <= num2; k += 1) {
     if (num2 % k === 0) {
       divisors2.push(k);
-      }
     }
+  }
   for (let d of divisors1) {
     if (divisors2.includes(d)) {
       gcdArr.push(d);

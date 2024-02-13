@@ -1,12 +1,12 @@
 #!/usr/bin/env node
+import range from "lodash.range";
 import { 
   myHeroName, 
   greets, 
   answerInput 
 } from "../src/functions.js";
-import range from "lodash.range";
+
   const attempts = 3;
-  // let counter = 0;
   
   const gameGenerator = (game, task) => {
     let corrAnswr;
@@ -19,12 +19,12 @@ import range from "lodash.range";
       console.log(`Question: ${inputTask}`);
       let answr = answerInput();
       if (answr === estimatedAnsw) {
-        console.log('Correct!')
+        console.log('Correct!');
         i = Number(i) + 1;
-        if (i === 3) {
+        if (i === attempts) {
           console.log(`Congratulations, ${myHeroName}!`);
-      } 
-    }
+      }
+    };
       if (answr !== estimatedAnsw) {
         corrAnswr = estimatedAnsw;
         wrongAnswr = answr;  
@@ -32,8 +32,7 @@ import range from "lodash.range";
         console.log(`Let's try again, ${myHeroName}!`);
         break;
       }
-  
     }
   };
 
-export { gameGenerator }
+export { gameGenerator };
