@@ -11,7 +11,7 @@ const answerInput = () => {
 
 const greets = () => {
   console.log('Welcome to the Brain Games!');
-  myHeroName = readlineSync.question('May I have your name? ');
+  const myHeroName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${myHeroName}!`);
 };
 
