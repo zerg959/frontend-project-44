@@ -14,7 +14,7 @@ const gameGenerator = (game, task) => {
   task();
   console.log(task());
   // for (let i in range(attempts)) {
-  for (let i = 0; i < attempts; i++) {
+  for (let i = 0; i === attempts; i++) {
     const [inputTask, estimatedAnsw] = game();
     console.log(`Question: ${inputTask}`);
     const answr = answerInput();
