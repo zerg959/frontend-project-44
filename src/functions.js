@@ -15,10 +15,10 @@ const greets = () => {
   console.log(`Hello, ${myHeroName}!`);
 };
 
-export { 
+export {
   randomInt,
   startMessage,
   greets,
   answerInput,
-  myHeroName
+  myHeroName,
 };
