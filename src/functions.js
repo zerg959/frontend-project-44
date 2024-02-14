@@ -4,7 +4,7 @@ const myHeroName = '';
 const randomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
 
 const startMessage = (message) => message;
-const answerInput = () => {
+let answerInput = () => {
   let heroAnswer = readlineSync.question('Your answer: ');
   return heroAnswer;
 };
