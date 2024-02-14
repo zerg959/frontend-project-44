@@ -1,13 +1,13 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-let myHeroName = '';
-const randomInt = (max, min) =>  Math.floor(Math.random() * (max - min)) + min;
+const myHeroName = '';
+const randomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
 
 const startMessage = (message) => message;
 const answerInput = () => {
-  let heroAnswer = readlineSync.question('Your answer: ');
+  const heroAnswer = readlineSync.question('Your answer: ');
   return heroAnswer;
-  };
+};
 
 const greets = () => {
   console.log('Welcome to the Brain Games!');
