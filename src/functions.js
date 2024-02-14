@@ -5,7 +5,7 @@ const randomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
 
 const startMessage = (message) => message;
 let answerInput = () => {
-  const heroAnswer = readlineSync.question('Your answer: ');
+  let heroAnswer = readlineSync.question('Your answer: ');
   return heroAnswer;
 };
 
