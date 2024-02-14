@@ -1,4 +1,3 @@
-import range from 'lodash.range';
 import { randomInt } from '../functions.js';
 
 const primeTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
