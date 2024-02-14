@@ -8,13 +8,11 @@ const calcGame = () => {
   let answerCalc;
   const operators = ['+', '*'];
   const operator = operators[randomInt(0, operators.length)];
-  switch (operator) {
-    case 1:
-      answerCalc = num1 + num2;
-      break;
-    case 2:
+  if (operator === '+') {
+    answerCalc = num1 + num2;
+  }
+  if (operator === '*') {
       answerCalc = num1 * num2;
-      break;
   }
   const questExpression = `${num1} ${operator} ${num2}`;
   return [questExpression, String(answerCalc)];
