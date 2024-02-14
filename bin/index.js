@@ -23,8 +23,8 @@ export default function gameGenerator(game, task) {
       i = Number(i) + 1;
       if (i === attempts) {
         console.log(`Congratulations, ${myHeroName}!`);
-  }
-}
+      }
+    }
     if (answr !== estimatedAnsw) {
       corrAnswr = estimatedAnsw;
       wrongAnswr = answr;
@@ -33,4 +33,4 @@ export default function gameGenerator(game, task) {
       break;
     }
   }
-};
+}
