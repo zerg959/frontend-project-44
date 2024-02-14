@@ -8,7 +8,7 @@ import {
 
 const attempts = 3;
 
-const gameGenerator = (game, task) => {
+export default function gameGenerator(game, task) {
   let corrAnswr;
   let wrongAnswr;
   greets();
@@ -34,5 +34,3 @@ const gameGenerator = (game, task) => {
     }
   }
 };
-
-export { gameGenerator };
