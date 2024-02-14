@@ -12,7 +12,7 @@ const calcGame = () => {
     answerCalc = num1 + num2;
   }
   if (operator === '*') {
-      answerCalc = num1 * num2;
+    answerCalc = num1 * num2;
   }
   const questExpression = `${num1} ${operator} ${num2}`;
   return [questExpression, String(answerCalc)];
