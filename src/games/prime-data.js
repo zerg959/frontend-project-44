@@ -14,7 +14,7 @@ const primeCheck = (num) => {
 };
 
 const primeGame = () => {
-  const questIsPrime = randomInt(1, 101);
+  const questIsPrime = randomInt(2, 101);
   let answerIsPrime;
   if (primeCheck(questIsPrime)) {
     answerIsPrime = 'no';
