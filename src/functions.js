@@ -11,5 +11,5 @@ const answerInput = () => {
 export {
   randomInt,
   startMessage,
-  answerInput
+  answerInput,
 };

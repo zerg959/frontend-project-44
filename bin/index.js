@@ -15,7 +15,7 @@ export default function gameGenerator(game, task) {
   for (let i in range(attempts)) {
     const [inputTask, estimatedAnsw] = game();
     console.log(`Question: ${inputTask}`);
-    let answr = answerInput();
+    const answr = answerInput();
     if (answr === estimatedAnsw) {
       console.log('Correct!');
       i = Number(i) + 1;
