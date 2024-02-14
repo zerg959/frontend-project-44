@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-let myHeroName = '';
+const myHeroName = '';
 const randomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
 
 const startMessage = (message) => message;
-let answerInput = () => {
+const answerInput = () => {
   let heroAnswer = readlineSync.question('Your answer: ');
   return heroAnswer;
 };
