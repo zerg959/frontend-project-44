@@ -1,18 +1,16 @@
 #!/usr/bin/env node
+import readlineSync from 'readline-sync';
 import range from 'lodash.range';
-import {
-  myHeroName,
-  greets,
-  answerInput,
-} from '../src/functions.js';
+import { answerInput } from '../src/functions.js';
 
 const attempts = 3;
 
 export default function gameGenerator(game, task) {
   let corrAnswr;
   let wrongAnswr;
-  greets();
-  // task;
+  console.log('Welcome to the Brain Games!');
+  const myHeroName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${myHeroName}!`);
   console.log(task);
   for (let i in range(attempts)) {
     const [inputTask, estimatedAnsw] = game();
