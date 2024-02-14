@@ -8,11 +8,11 @@ const calcGame = () => {
   let answerCalc;
   const operators = ['+', '*'];
   const operator = operators[randomInt(0, operators.length)];
-  switch (operator){
-    case '+':
+  switch (operator) {
+    case 1:
       answerCalc = num1 + num2;
       break;
-    case '*':
+    case 2:
       answerCalc = num1 * num2;
       break;
   }
