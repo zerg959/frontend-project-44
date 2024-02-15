@@ -10,7 +10,7 @@ const gcdGame = () => {
   const num2 = randomInt(maxNum, minNum);
   const divisors1 = [];
   const divisors2 = [];
-  const gcdArr = [];
+  let gcdArr = [];
   for (let i = 1; i <= num1; i += 1) {
     if (num1 % i === 0) {
       divisors1.push(i);
@@ -21,24 +21,9 @@ const gcdGame = () => {
       divisors2.push(k);
     }
   }
-  // divisors1.forEach((value, index, divisors2) => {
-  //   if (divisors2.includes(value)) {
-  //     gcdArr.push(value);
-  //   }
-  // })
-  // for (const value of divisors1) {
-  //   if (divisors2.includes(value)) {
-  //     gcdArr.push(value);
-  //   }
-  // }
-  let item;
-  for (item of divisors1) {
-    if (divisors2.includes(item)) {
-      gcdArr.push(item);
-  }
-}
+  gcdArr = divisors1.filter((item) => divisors2.includes(item));
   const gcd = Math.max(...gcdArr);
   return [`${num1} ${num2}`, String(gcd)];
 };
-console.log(gcdGame());
+
 export { gcdGame, gcdTask };
