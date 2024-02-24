@@ -25,6 +25,7 @@ export default function gameGenerator(game, task) {
     if (answr === estimatedAnsw) {
       console.log('Correct!');
     }
-    console.log(`Congratulations, ${myHeroName}!`);
+    
   }
+  console.log(`Congratulations, ${myHeroName}!`);
 }
