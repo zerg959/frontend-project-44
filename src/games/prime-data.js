@@ -29,10 +29,7 @@ const primeCheck = (num) => {
 
 const primeGame = () => {
   const questIsPrime = randomInt(minNum, maxNum);
-  return {
-    question: String(questIsPrime),
-    answer: primeCheck(questIsPrime) ? 'yes' : 'no',
-  };
+  return [String(questIsPrime), primeCheck(questIsPrime) ? 'no' : 'yes'];
 };
 
 
