@@ -4,7 +4,7 @@
 <hr></hr>
 <h2>Brain games</h2><br>
 Training JS-project consists of 5 console games, there player should find correct answer.<br>
-1. "Brain calculator": find correct answer of the given expression;<br>
+1. <a href="https://asciinema.org/a/xmB2tW024Wv9tWVc44vpYZljH">"Brain calculator"</a>: find correct answer of the given expression;<br>
 2. <a href="https://asciinema.org/a/mkjC2GQcOlDChg7ZVjCw0uNna">"Brain even"</a>: answer correctly is given number even or odd;<br>
 3. "Brain GCD (Great common divisor): find correct GCD of two given numbers;<br>
 4. "Brain prime": answer correctly is given number prime or not;<br>
