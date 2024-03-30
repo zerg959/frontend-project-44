@@ -15,13 +15,14 @@ You can see how it realized in asciinema videos.
 Player had to give 3 correct answer in a row to win; No wrong answers allowed.<br>
 <hr></hr>
 <h3>Installation:</h3>
-1. Clone repository in local folder with installed Node.js and NPM.<br>
-2. Run in terminal command below to run local file global:<br>
+- Clone repository in local folder with installed Node.js and NPM.<br>
+- Start command below in terminal to run local file globally:<br>
 
 ```
 npm link
 ```
-3. Every game is started with own command:
+
+- Every game is started with own command:
 ```
 brain-calc
 ```
