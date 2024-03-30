@@ -1,7 +1,7 @@
 import { randomInt } from '../functions.js';
 
 const maxNum = 50;
-const minNum = 1;
+const minNum = 2;
 
 const primeTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
