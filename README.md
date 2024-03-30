@@ -16,5 +16,6 @@ Player had to give 3 correct answer in a row to win; No wrong answers allowed.<b
 <h3>Installation:</h3>
 1. Clone repository in local folder with installed Node.js and NPM.<br>
 2. Run in terminal command below:<br>
-$ npm link
-
+'''js
+npm link
+'''
