@@ -16,15 +16,24 @@ const primeCheck = (num) => {
   return primeCounter > 2;
 };
 
+// const primeGame = () => {
+//   const questIsPrime = randomInt(minNum, maxNum);
+//   let answerIsPrime;
+//   if (primeCheck(questIsPrime)) {
+//     answerIsPrime = 'no';
+//   } else {
+//     answerIsPrime = 'yes';
+//   }
+//   return [questIsPrime, answerIsPrime];
+// };
+
 const primeGame = () => {
   const questIsPrime = randomInt(minNum, maxNum);
-  let answerIsPrime;
-  if (primeCheck(questIsPrime)) {
-    answerIsPrime = 'no';
-  } else {
-    answerIsPrime = 'yes';
-  }
-  return [questIsPrime, answerIsPrime];
+  return {
+    question: String(questIsPrime),
+    answer: primeCheck(questIsPrime) ? 'yes' : 'no',
+  };
 };
+
 
 export { primeGame, primeTask };
