@@ -16,21 +16,9 @@ const primeCheck = (num) => {
   return primeCounter > 2;
 };
 
-// const primeGame = () => {
-//   const questIsPrime = randomInt(minNum, maxNum);
-//   let answerIsPrime;
-//   if (primeCheck(questIsPrime)) {
-//     answerIsPrime = 'no';
-//   } else {
-//     answerIsPrime = 'yes';
-//   }
-//   return [questIsPrime, answerIsPrime];
-// };
-
 const primeGame = () => {
   const questIsPrime = randomInt(minNum, maxNum);
   return [String(questIsPrime), primeCheck(questIsPrime) ? 'no' : 'yes'];
 };
-
 
 export { primeGame, primeTask };
