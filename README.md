@@ -12,7 +12,8 @@ You can see how it realized in asciinema videos.<br>
 4. <a href="https://asciinema.org/a/1hrgJgkJu3ZXqjDzZnFc93jMJ">"Brain prime"</a>: answer correctly is given number prime or not;<br>
 5. <a href="https://asciinema.org/a/SUdQtTYuo4COAYAn5lsCoQ0ze">"Brain progression"</a>: find correct element of the given progression.<br>
 <br>
-Player had to give 3 correct answer in a row to win; No wrong answers allowed.<br>
+Player had to give 3 correct answer in a row to win; No wrong answers are allowed.<br>
+![screenshot of sample](https://github.com/zerg959/frontend-project-44/blob/main/brain-game.PNG)
 <hr></hr>
 <h3>Installation:</h3>
 - Clone repository in local folder with installed Node.js and NPM.<br>
