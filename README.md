@@ -17,5 +17,5 @@ Player had to give 3 correct answer in a row to win; No wrong answers allowed.<b
 1. Clone repository in local folder with installed Node.js and NPM.<br>
 2. Run in terminal command below:<br>
 '''js
-npm link
+<npm link>
 '''
