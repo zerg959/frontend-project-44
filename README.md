@@ -5,6 +5,7 @@
 <h2>Brain games</h2><br>
 <h3>Description:</h3>
 Training JS-project consists of 5 console games, there player should find correct answer.<br>
+You can see how it realized in asciinema videos.
 1. <a href="https://asciinema.org/a/xmB2tW024Wv9tWVc44vpYZljH">"Brain calculator"</a>: find correct answer of the given expression;<br>
 2. <a href="https://asciinema.org/a/mkjC2GQcOlDChg7ZVjCw0uNna">"Brain even"</a>: answer correctly is given number even or odd;<br>
 3. <a href="https://asciinema.org/a/gDMtaMni4JNJao7Jb3xFnPICm">"Brain GCD (Great common divisor)"</a>: find correct GCD of two given numbers;<br>
@@ -15,7 +16,24 @@ Player had to give 3 correct answer in a row to win; No wrong answers allowed.<b
 <hr></hr>
 <h3>Installation:</h3>
 1. Clone repository in local folder with installed Node.js and NPM.<br>
-2. Run in terminal command below:<br>
-'''js
-<npm link>
-'''
+2. Run in terminal command below to run local file global:<br>
+
+```
+npm link
+```
+3. Every game is started with own command:
+```
+brain-calc
+```
+```
+brain-even
+```
+```
+brain-gcd
+```
+```
+brain-prime
+```
+```
+brain-progression
+```
