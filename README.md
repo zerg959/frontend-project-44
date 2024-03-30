@@ -13,7 +13,8 @@ You can see how it realized in asciinema videos.<br>
 5. <a href="https://asciinema.org/a/SUdQtTYuo4COAYAn5lsCoQ0ze">"Brain progression"</a>: find correct element of the given progression.<br>
 <br>
 Player had to give 3 correct answer in a row to win; No wrong answers are allowed.<br>
-![screenshot of sample](https://github.com/zerg959/frontend-project-44/blob/main/brain-game.PNG)
+<hr></hr><br>
+<img src="https://github.com/zerg959/frontend-project-44/blob/main/brain-game.PNG" alt="screenshot">
 <hr></hr>
 <h3>Installation:</h3>
 - Clone repository in local folder with installed Node.js and NPM.<br>
